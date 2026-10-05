@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Computing</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8ff;
+      color: #17233c;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #102a56;
+      color: white;
+      padding: 16px 8%;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: #69b7ff;
+    }
+
+    .hero {
+      min-height: 75vh;
+      padding: 70px 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(135deg, #102a56, #2468b3);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 650px;
+    }
+
+    .tag {
+      color: #9dd5ff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 58px;
+      margin-bottom: 18px;
+    }
+
+    .intro {
+      font-size: 19px;
+      margin-bottom: 28px;
+      color: #e7f2ff;
+    }
+
+    button {
+      border: none;
+      padding: 13px 24px;
+      border-radius: 8px;
+      background: white;
+      color: #102a56;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+    }
+
+    .cloud {
+      font-size: 180px;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 65px 10%;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      padding: 30px 22px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(20, 50, 90, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card span {
+      font-size: 42px;
+    }
+
+    .card h3 {
+      margin: 12px 0 8px;
+    }
+
+    #benefits {
+      background: #e8f3ff;
+    }
+
+    .benefit-list {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .benefit-list p {
+      background: white;
+      padding: 14px 22px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #102a56;
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      .hero {
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      .cloud {
+        font-size: 110px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">☁ CloudHub</div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#benefits">Benefits</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="tag">SMART • SIMPLE • SCALABLE</p>
+        <h1>Cloud Computing</h1>
+        <p class="intro">
+          Access computing resources such as storage, servers, databases
+          and software over the internet without owning physical infrastructure.
+        </p>
+        <button id="learnBtn">Learn More</button>
+      </div>
+
+      <div class="cloud">☁</div>
+    </section>
+
+    <section id="services">
+      <h2>Cloud Services</h2>
+
+      <div class="cards">
+        <div class="card">
+          <span>💾</span>
+          <h3>Storage</h3>
+          <p>Store and access your files securely from anywhere.</p>
+        </div>
+
+        <div class="card">
+          <span>🖥️</span>
+          <h3>Computing</h3>
+          <p>Use virtual servers and computing power whenever needed.</p>
+        </div>
+
+        <div class="card">
+          <span>🗄️</span>
+          <h3>Databases</h3>
+          <p>Manage application data using scalable cloud databases.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits">
+      <h2>Why Use Cloud Computing?</h2>
+
+      <div class="benefit-list">
+        <p>✓ Cost Effective</p>
+        <p>✓ Easy Scalability</p>
+        <p>✓ Access From Anywhere</p>
+        <p>✓ Automatic Backup</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 CloudHub | Cloud Computing Web Page</p>
+  </footer>
+
+  <script>
+    document.getElementById("learnBtn").addEventListener("click", function () {
+      document.getElementById("services").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+</html>
